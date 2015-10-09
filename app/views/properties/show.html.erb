@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @property.description %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= image_tag @property.image.url(:medium) %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @property.location %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @property.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @property.longitude %>
+</p>
+
+<p>
+  <strong>Amenties:</strong>
+  <%= @property.amenties %>
+</p>
+
+<p>
+  <strong>Facilities:</strong>
+  <%= @property.facilities %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @property.date %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @property.price %>
+</p>
+
+<p>
+  <strong>Services:</strong>
+  <%= @property.services %>
+</p>
+
+<%= link_to 'Edit', edit_property_path(@property) %> |
+<%= link_to 'Back', properties_path %>
